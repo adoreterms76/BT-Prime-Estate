@@ -1,0 +1,201 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #3498db; /* Blue background */
+    color: #fff;
+    padding: 20px;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    text-align: center; /* Center the logo */
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    color: #f1c40f;
+}
+
+/* Welcome Text Section */
+.welcome-text {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.welcome-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.welcome-text p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Buttons Section */
+.buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.buttons button {
+    background-color: #bdc3c7; /* Grey color */
+    color: #333;
+    font-size: 1.2em;
+    padding: 15px;
+    border: 2px solid #333; /* Border around buttons */
+    width: 60%; /* Button width 60% */
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #95a5a6; /* Slightly darker grey on hover */
+}
+
+/* Main Content for Commercial and Residential Sales */
+.Commercial-Residential-Sales-and-Rentals {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Commercial-Residential-Sales-and-Rentals h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    flex-basis: 45%; /* Takes up 45% of the width */
+}
+
+.Commercial-Residential-Sales-and-Rentals img {
+    width: 50%; /* Image width 50% */
+    height: auto;
+    margin-left: 20px;
+}
+
+.Commercial-Residential-Sales-and-Rentals ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Commercial-Residential-Sales-and-Rentals li {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Main Content for All Your Needs Covered */
+.All-Your-Needs-Covered {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.All-Your-Needs-Covered h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    flex-basis: 45%; /* Takes up 45% of the width */
+}
+
+.All-Your-Needs-Covered img {
+    width: 50%; /* Image width 50% */
+    height: auto;
+    margin-left: 20px;
+}
+
+.All-Your-Needs-Covered ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.All-Your-Needs-Covered li {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Chat Button */
+.chat-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.chat-button a {
+    background-color: #f1c40f;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.chat-button a:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #3498db; /* Blue background */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.2em;
+}
