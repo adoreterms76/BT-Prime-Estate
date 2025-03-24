@@ -101,22 +101,41 @@ header nav ul li a:hover {
     background-color: #8e44ad; /* Darker purple on hover */
 }
 
+
 /* Main Content for Commercial and Residential Sales and All Your Needs Covered */
-.Commercial-Residenntial-Sales-and-All-Your-Needs
-.text{
-    flex: 2;
-img{
-    width: 100%
-    max-width: 400%
-    object-fit: cover;
-    vertical-align: middle}
-.wrapper{
-    padding: 0 15px;
+.Commercial-Residential-Sales-and-All-Your-Needs {
     display: flex;
-    flex-wrap: wrap:
-    align-items: center;
-    justufy-content: space-around;
-    gap: 5rem;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 40px;
+    background-color: #fff;
+    vertical-align: wrap;
+}
+
+.section {
+    width: 40%; /* Each section takes up about 50% of the space */
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.section img {
+    width: 40%; /* Image width is 30% */
+    height: auto;
+    margin-bottom: 5px; /* Space between image and text */
+}
+
+.section h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 1.2em;
+    color: #555;
+}
+
     
 /* Chat Button */
 .chat-button {
