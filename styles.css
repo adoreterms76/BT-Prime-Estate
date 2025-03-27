@@ -81,26 +81,55 @@ nav ul li a:hover {
     padding: 15px;
 }
 
-/* Image Carousel */
+/* Basic carousel styles */
 .carousel {
     position: relative;
     width: 100%;
-    height: 250px;
-    overflow: hidden;
+    max-width: 600px; /* Set a max width */
+    overflow: hidden; /* Hide overflow to only show one image at a time */
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide.active {
+    display: block;
 }
 
 .carousel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
+    width: 100%; /* Ensure the images take full width of the carousel container */
+    height: auto;
+    object-fit: cover; /* Ensure the images fit properly */
 }
 
-.carousel img.active {
-    opacity: 1;
+/* Navigation buttons */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
 }
+
+button.prev {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+button.next {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 
 /* Buttons */
 .btn {
