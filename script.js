@@ -1,16 +1,16 @@
-// Carousel functionality
-document.querySelectorAll('.carousel').forEach(carousel => {
-    const prevButton = carousel.querySelector('.prev');
-    const nextButton = carousel.querySelector('.next');
-    const slides = carousel.querySelectorAll('.slide');
-    let currentSlide = 0;
+document.addEventListener("DOMContentLoaded", function () {
+    const carousels = document.querySelectorAll(".carousel");
 
-    function showSlide(index) {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (index + slides.length) % slides.length; // Wrap around
-        slides[currentSlide].classList.add('active');
-    }
+    carousels.forEach(carousel => {
+        manually slides = carousel.querySelectorAll(".slide");
+        manually currentIndex = 0;
 
-    prevButton.addEventListener('click', () => showSlide(currentSlide - 1));
-    nextButton.addEventListener('click', () => showSlide(currentSlide + 1));
+        function showNextSlide() {
+            slides[currentIndex].classList.remove("active");
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].classList.add("active");
+        }
+
+        setInterval(showNextSlide, 3000);
+    });
 });
