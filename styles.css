@@ -212,73 +212,61 @@ header nav ul li a:hover {
 }
 
 
-/* Main Content for Commercial and Residential Sales and All Your Needs Covered */
-.Commercial-Residential-Sales-and-All-Your-Needs {
+.sales-rentals {
     display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    margin-top: 40px;
-    background-color: #fff;
-    vertical-align: wrap;
+    justify-content: space-between; /* Space between the two sections */
+    gap: 20px;
+    margin: 20px;
 }
 
-.section {
-    width: 40%; /* Each section takes up about 50% of the space */
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 10px;
+.sales-rentals-item {
+    flex: 1; /* Make each item take equal width */
+    box-sizing: border-box; /* Ensure padding doesn't affect layout */
 }
 
-.section img {
-    width: 40%; /* Image width is 30% */
+.sales-rentals-item img {
+    width: 100%;
     height: auto;
-    margin-bottom: 5px; /* Space between image and text */
+    max-height: 300px; /* Set a max height for the images */
+    object-fit: cover;
 }
 
-.section h1 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
-}
-
-.section p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-    
-/* Chat Button */
-.chat-button {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.chat-button a {
-    background-color: #bdc3c7; /* Grey color */
+.sales-rentals-item h1 {
+    font-size: 24px;
     color: #333;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.2em;
+}
+
+.sales-rentals-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.enquire-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Take up equal space */
+    margin-top: 20px;
+}
+
+.enquire-now-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
-.chat-button a:hover {
-    background-color: #95a5a6; /* Slightly darker grey on hover */
+.enquire-now-btn:hover {
+    background-color: #0056b3;
 }
 
-/* Footer */
-footer {
-    background-color: #3498db; /* Blue background */
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 1.2em;
-}
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
