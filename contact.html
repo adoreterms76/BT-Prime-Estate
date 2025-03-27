@@ -3,40 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Agent</title>
+    <title>Contact Us - BT Prime Estate</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <h1>Contact the Agent</h1>
+        <h1>Contact Us</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="residential-sale.html">Back to Listings</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="properties.html">Properties</a></li>
             </ul>
         </nav>
     </header>
-
+    
+    <section class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>We’d love to hear from you! Whether you have questions about our properties, services, or just want to say hello, reach out to us.</p>
+        
+        <div class="contact-details">
+            <p><strong>📍 Address:</strong> Plot 1234, CBD, Gaborone, Botswana</p>
+            <p><strong>📞 Phone:</strong> +267 123 4567</p>
+            <p><strong>📧 Email:</strong> info@btprimeestate.com</p>
+            <p><strong>⏰ Office Hours:</strong> Mon - Fri: 8 AM - 5 PM | Sat: 9 AM - 1 PM</p>
+        </div>
+    </section>
+    
     <section class="contact-form">
-        <h2>Send an Inquiry</h2>
-        <form action="submit-form.php" method="POST">
-            <label for="name">Name:</label>
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
-
+            
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-
+            
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit" class="btn">Send Message</button>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
         </form>
     </section>
-
+    
+    <section class="map">
+        <h2>Find Us</h2>
+        <iframe src="https://www.google.com/maps/embed?..." width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    
     <footer>
-        <p>&copy; 2025 Your Real Estate Agency. All rights reserved.</p>
+        <p>&copy; 2025 BT Prime Estate. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
