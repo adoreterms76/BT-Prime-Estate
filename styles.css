@@ -468,7 +468,103 @@ nav ul li a {
     margin-top: 20px;
     text-align: center;
 }
+/* General styling for contact sections */
+.ceo-contact, .agents-contact {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
 
+.ceo-contact h2, .agents-contact h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.ceo-info, .agent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ceo-info img, .agent img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.ceo-info p, .agent p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+.ceo-details, .agent-details {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.ceo-details h3, .agent-details h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.ceo-details ul, .agent-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ceo-details li, .agent-details li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.ceo-details a, .agent-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.ceo-details a:hover, .agent-details a:hover {
+    text-decoration: underline;
+}
+
+/* Layout for agent sections to display side by side */
+.agents-info {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.agent {
+    flex: 1;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.agent h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.agent .agent-details {
+    margin-top: 15px;
+}
+
+.agent img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 footer {
     text-align: center;
     padding: 10px;
