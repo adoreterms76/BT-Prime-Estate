@@ -284,89 +284,111 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-/* Header Styling */
 header {
-    background-color: #007bff;
+    background-color: #004080;
     color: white;
-    padding: 15px;
     text-align: center;
+    padding: 20px;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
+    text-align: center;
+    background: #003366;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    padding: 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-weight: bold;
 }
 
-/* Contact Form Section */
-.contact-form {
-    max-width: 500px;
-    margin: 40px auto;
+section {
+    max-width: 1000px;
+    margin: 20px auto;
     padding: 20px;
     background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #004080;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 5px;
+}
+
+/* Meet the Team Section */
+.team {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.ceo {
+    text-align: center;
+}
+
+.ceo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+.agents {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.agent {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background: #f0f0f0;
     border-radius: 8px;
 }
 
-.contact-form h2 {
-    text-align: center;
-    color: #007bff;
+.agent img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.contact-form label {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
+/* Testimonials */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.contact-form textarea {
-    height: 150px;
-}
-
-.contact-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-top: 15px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3;
+.testimonial {
+    background: #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    font-style: italic;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 15px;
-    background: #007bff;
+    background: #003366;
     color: white;
+    padding: 15px;
     margin-top: 20px;
 }
