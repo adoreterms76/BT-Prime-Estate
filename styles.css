@@ -25,81 +25,27 @@ header .logo h1 {
     text-align: center; /* Center the logo */
     margin-bottom: 10px;
 }
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
-}
 
-/* Header Styling */
-header {
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Property Listings */
-.property-list {
+/* Navigation */
+header nav ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    list-style: none;
+    padding-top: 10px;
 }
 
-.property {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 350px;
-    text-align: center;
-    padding: 15px;
+header nav ul li {
+    margin: 0 20px;
 }
 
-/* Image Carousel */
-.carousel {
-    position: relative;
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
-.carousel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
-}
-
-.carousel img.active {
-    opacity: 1;
+header nav ul li a:hover {
+    color: #f1c40f;
 }
 
 /* Buttons */
@@ -134,28 +80,6 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 20px;
-}
-
-/* Navigation */
-header nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding-top: 10px;
-}
-
-header nav ul li {
-    margin: 0 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-header nav ul li a:hover {
-    color: #f1c40f;
 }
 
 /* Welcome Text Section */
@@ -211,6 +135,163 @@ header nav ul li a:hover {
     background-color: #8e44ad; /* Darker purple on hover */
 }
 
+/* Property Listings (Residential Sale Page) */
+.residential-sale {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.property-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+    transform: scale(1.05);
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.property-card h3 {
+    font-size: 1.8em;
+    margin-top: 15px;
+}
+
+.property-card p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.property-card .btn {
+    margin-top: 10px;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.property-card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* House Details Page */
+.house-details {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.house-details .image-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.house-details .image-gallery img {
+    width: 48%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.house-details .details {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.house-details .details h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.house-details .details p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Buttons for House Details */
+.details-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.details-buttons a {
+    padding: 12px 25px;
+    background-color: #28a745; /* Green color for message */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.details-buttons a:hover {
+    background-color: #218838;
+}
+
+.details-buttons .contact {
+    background-color: #007bff; /* Blue color for contact */
+}
+
+.details-buttons .contact:hover {
+    background-color: #0056b3;
+}
+
+/* Chat Button */
+.chat-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.chat-button a {
+    background-color: #bdc3c7; /* Grey color */
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.chat-button a:hover {
+    background-color: #95a5a6; /* Slightly darker grey on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #3498db; /* Blue background */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.2em;
+}
 
 /* Main Content for Commercial and Residential Sales and All Your Needs Covered */
 .Commercial-Residential-Sales-and-All-Your-Needs {
@@ -246,37 +327,4 @@ header nav ul li a:hover {
     color: #555;
 }
 
-    
-/* Chat Button */
-.chat-button {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.chat-button a {
-    background-color: #bdc3c7; /* Grey color */
-    color: #333;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.chat-button a:hover {
-    background-color: #95a5a6; /* Slightly darker grey on hover */
-}
-
-/* Footer */
-footer {
-    background-color: #3498db; /* Blue background */
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 1.2em;
-}
 
